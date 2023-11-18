@@ -277,13 +277,26 @@
   
         // 奇妙的屏幕大小自适应
         window.onresize = function () {
-          display.width = window.innerWidth;
+          // display.width = window.innerWidth;
+          // if (window.innerWidth / window.innerHeight > 1.8333333333333) {
+          //   display.height = (window.innerWidth / 1980) * 1080;
+          //   // window.scrollTo(0, (window.innerHeight - 123) / 16);
+          // } else {
+          //   display.height = window.innerHeight;
+          // }
+
+
+          var devicePixelRatio = window.devicePixelRatio || 1;
+          display.width = window.innerWidth * devicePixelRatio;
+          display.height = window.innerHeight * devicePixelRatio;
+          // 设置画布的 CSS 尺寸为所需的尺寸
+          display.style.width = window.innerWidth + 'px';
+          display.style.height = window.innerHeight + 'px';
           if (window.innerWidth / window.innerHeight > 1.8333333333333) {
-            display.height = (window.innerWidth / 1980) * 1080;
-            // window.scrollTo(0, (window.innerHeight - 123) / 16);
-          } else {
-            display.height = window.innerHeight;
+            display.height = (window.innerWidth / 1980) * 1080 * devicePixelRatio;
           }
+          // 根据 devicePixelRatio 更新上下文的比例
+          displayCtx.scale(devicePixelRatio, devicePixelRatio);
         };
   
         window.onresize();
@@ -440,6 +453,8 @@
   
           ctx.clearRect(0, 0, 1980, 1080);
           ctx.drawImage(bg, 0, 0);
+          // 绘制背景图片，使用缩放比例
+  // ctx.drawImage(bg, 0, 0, originalWidth * scaleFactor, originalHeight * scaleFactor);
           ctx.drawImage(mask, 954, 99);
   
           ctx.fillStyle = "#97adbb"; // 时间的颜色
@@ -575,7 +590,8 @@
           ctx.fillText(greeting, 135, 100);
           ctx.textAlign = "start";
           ctx.resetTransform();
-  
+          // 更新显示上下文的变换
+          // displayCtx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
           displayCtx.drawImage(cvs, 0, 0, display.width, display.height);
           window.requestAnimationFrame(render);
         }
@@ -624,5 +640,15 @@
   .banner-conent {
     margin-top: 23vh !important;
   }
+  /* Adjust canvas sizes based on screen width */
+@media screen and (max-width: 768px) {
+  #cvs,
+  #screenImage,
+  #rili,
+  #display {
+    width: 100%;
+    height: 100vh;
+  }
+}
   </style>
   
