@@ -32,5 +32,8 @@
   },
   "dependencies": {
     "vuepress-plugin-reading-progress": "^1.0.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
