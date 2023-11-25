@@ -277,26 +277,26 @@
   
         // 奇妙的屏幕大小自适应
         window.onresize = function () {
-          // display.width = window.innerWidth;
-          // if (window.innerWidth / window.innerHeight > 1.8333333333333) {
-          //   display.height = (window.innerWidth / 1980) * 1080;
-          //   // window.scrollTo(0, (window.innerHeight - 123) / 16);
-          // } else {
-          //   display.height = window.innerHeight;
-          // }
-
-
-          var devicePixelRatio = window.devicePixelRatio || 1;
-          display.width = window.innerWidth * devicePixelRatio;
-          display.height = window.innerHeight * devicePixelRatio;
-          // 设置画布的 CSS 尺寸为所需的尺寸
-          display.style.width = window.innerWidth + 'px';
-          display.style.height = window.innerHeight + 'px';
+          display.width = window.innerWidth;
           if (window.innerWidth / window.innerHeight > 1.8333333333333) {
-            display.height = (window.innerWidth / 1980) * 1080 * devicePixelRatio;
+            display.height = (window.innerWidth / 1980) * 1080;
+            // window.scrollTo(0, (window.innerHeight - 123) / 16);
+          } else {
+            display.height = window.innerHeight;
           }
-          // 根据 devicePixelRatio 更新上下文的比例
-          displayCtx.scale(devicePixelRatio, devicePixelRatio);
+
+
+          // var devicePixelRatio = window.devicePixelRatio || 1;
+          // display.width = window.innerWidth * devicePixelRatio;
+          // display.height = window.innerHeight * devicePixelRatio;
+          // // 设置画布的 CSS 尺寸为所需的尺寸
+          // display.style.width = window.innerWidth + 'px';
+          // display.style.height = window.innerHeight + 'px';
+          // if (window.innerWidth / window.innerHeight > 1.8333333333333) {
+          //   display.height = (window.innerWidth / 1980) * 1080 * devicePixelRatio;
+          // }
+          // // 根据 devicePixelRatio 更新上下文的比例
+          // displayCtx.scale(devicePixelRatio, devicePixelRatio);
         };
   
         window.onresize();
