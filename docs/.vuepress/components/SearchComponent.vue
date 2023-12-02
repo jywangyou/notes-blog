@@ -9,7 +9,7 @@
         @keydown.enter="handleEnter"
         @keydown.arrow-up.prevent="handleArrowUp"
         @keydown.arrow-down.prevent="handleArrowDown"
-        placeholder="Search..."
+        placeholder=""
         class="card-search-input"
       />
       <ul v-if="isFocused && filteredData.length > 0">
@@ -113,7 +113,10 @@
   }
   
   .activeselect {
-    background-color: #eee;
+    box-shadow: #c0c0c0 0px 0px 5px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
   }
   .card-search-img{
     float:left;
@@ -127,7 +130,12 @@
     border: 1px solid #ccc;
     border-radius: 15px;
     height: 30px;
-    padding: 0 15px;
+    padding: 0 30px;
+    background: url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat;
   }
+  .card-search-input:focus {
+    cursor: auto;
+    border-color: #11a8cd;
+}
   </style>
   
