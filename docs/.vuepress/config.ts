@@ -57,6 +57,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 text: '《Git》',
                 link: '/note/git/',
               },
+              { text: '《MUI》', link: '/note/mui/' },
               {
                 text: 'TypeScript',
                 link: '/pages/51afd6/',
