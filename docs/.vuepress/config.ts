@@ -266,7 +266,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],//防止在移动端获取焦点页面变大
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度站长验证
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度统计的站长验证
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],//解决Chrome 统计访问不准确问题
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],//站点信息相关图标
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],//代码块折叠的箭头图标&时间提示的图标
@@ -279,7 +279,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
