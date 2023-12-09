@@ -265,7 +265,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],//防止在移动端获取焦点页面变大
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no' }],//防止在移动端获取焦点页面变大
     ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度统计的站长验证
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],//解决Chrome 统计访问不准确问题
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],//站点信息相关图标
@@ -309,12 +309,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
 
-    // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
+    // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search【即thirdparty-search】）
     // 'fulltext-search',
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
     [
-      'thirdparty-search',
+      'fulltext-search',
       {
         thirdparty: [
           {
