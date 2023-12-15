@@ -93,5 +93,5 @@ bannerBg: background:none # auto => 网格纹背景(有bodyBgImg时无背景)，
 <!-- 首页大图 -->
 <ClientOnly>
   <IndexBigImg />
-  <Fantasy index="true" />
+  <!-- <Fantasy index="true" /> -->
 </ClientOnly>

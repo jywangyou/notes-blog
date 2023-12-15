@@ -140,17 +140,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    // bodyBgImg: [
-    //   'https://z1.ax1x.com/2023/11/08/pi1ojg0.jpg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    bodyBgImg: [
+      '/img/bodybg.webp'
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
     // ],
-    contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+    // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: true, // 显示到文章页底部，默认true
@@ -174,7 +174,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.statically.io/gh/jywangyou/picx-images-hosting@master/123123.4heo88rsgqy0.png',
+      avatar: 'https://cdn.jsdelivr.net/gh/jywangyou/picx-images-hosting@master/img/okhead.5l9l7bclm5o0.png',
       name: 'Kronos',
       slogan: '纵有疾风起，人生不言弃',
     },
@@ -251,7 +251,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       bgTimeColor: true,     // 是否开启图片的背景色随一天的不同时间而变化，并且开启时间窗口提示，默认是 false。时间分为四种：白天（原图）、黄昏（偏黄）、晚上（偏黑）、深夜（偏深黑）
       bgTimeColorArray: ['transparent', 'transparent', 'transparent', 'transparent'],   // 第一个是白天的颜色（默认原图），第二个是黄昏的颜色，第三个是晚上的颜色，第四个是深夜的颜色。bgTimeColor 为 true 生效。提示：如果不想要这个效果，但是又想要时间窗口提示效果，则改为 ['transparent', 'transparent', 'transparent', 'transparent']
       descFade: true,   // 是否开启图片中间描述的淡入效果，默认为 false
-      desc: ["Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu", "愿你能成为自己的英雄，不惧离别，不怕孤独 —— 来自 Kronos", "心中有世界，闭目自可观","时间在走，没有回头，只有路口"],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
+      desc: [
+        "Web前端技术博客，积跬步以至千里，致敬每个爱学习的你 —— 来自 Evan Xu", 
+        "愿你能成为自己的英雄，不惧离别，不怕孤独 —— 来自 Kronos", 
+        "心中有世界，闭目自可观",
+        "时间在走，没有回头，只有路口"
+      ],  // 多个描述，如果填写则覆盖 config.js 的 description，不填写默认读取 config.js 的 description，descFade 为 true 生效
       descFontSize: '1.4rem',   // desc 的字体大小，默认 1.4rem。提示：原主题是 1.1rem
       descFadeInTime: 200,  // 描述的淡入效果持续时间，descFade 为 true 生效，默认 200 毫秒
       descFadeOutTime: 100,  // 描述的淡出效果持续时间，descFade 为 true 生效，默认 100 毫秒
@@ -315,31 +320,31 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
     [
       'fulltext-search',
-      {
-        thirdparty: [
-          {
-            title: '在MDN中搜索',
-            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-            behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-          },
-          {
-            title: '在Runoob中搜索',
-            frontUrl: 'https://www.runoob.com/?s=',
-          },
-          {
-            title: '在Vue API中搜索',
-            frontUrl: 'https://cn.vuejs.org/v2/api/#',
-          },
-          {
-            title: '在Bing中搜索',
-            frontUrl: 'https://cn.bing.com/search?q=',
-          },
-          {
-            title: '通过百度搜索本站的',
-            frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
-          },
-        ],
-      }
+      // {
+      //   thirdparty: [
+      //     {
+      //       title: '在MDN中搜索',
+      //       frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
+      //       behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
+      //     },
+      //     {
+      //       title: '在Runoob中搜索',
+      //       frontUrl: 'https://www.runoob.com/?s=',
+      //     },
+      //     {
+      //       title: '在Vue API中搜索',
+      //       frontUrl: 'https://cn.vuejs.org/v2/api/#',
+      //     },
+      //     {
+      //       title: '在Bing中搜索',
+      //       frontUrl: 'https://cn.bing.com/search?q=',
+      //     },
+      //     {
+      //       title: '通过百度搜索本站的',
+      //       frontUrl: `https://www.baidu.com/s?wd=site%3A${DOMAIN_NAME}%20`,
+      //     },
+      //   ],
+      // }
     ],
 
     [
@@ -348,7 +353,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
         copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
         duration: 1000, // prompt message display time.
-        showInMobile: false, // whether to display on the mobile side, default: false.
+        showInMobile: true, // whether to display on the mobile side, default: false.
       },
     ],
 
@@ -420,7 +425,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     [
     	{
         	name: 'custom-plugins',
-        	globalUIComponents: ["Twikoo","BlockToggle","GlobalTip","PageInfo","LastReadingPopup","Fantasy"] // 这里分别是评论组件，代码块组件，时间提示组件,站点信息组件,记录阅读位置组件,全局背景图组件
+        	globalUIComponents: ["Twikoo","BlockToggle","GlobalTip","PageInfo","LastReadingPopup"] // 这里分别是评论组件，代码块组件，时间提示组件,站点信息组件,记录阅读位置组件,全局背景图组件("Fantasy")
     	}
     ],
     [

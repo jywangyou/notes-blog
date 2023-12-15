@@ -131,7 +131,7 @@
     border-radius: 15px;
     height: 30px;
     padding: 0 30px;
-    background: url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat;
+    background: var(--mainBg) url(/assets/img/search.237d6f6a.svg) 0.6rem 0.5rem no-repeat;
   }
   .card-search-input:focus {
     cursor: auto;

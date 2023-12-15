@@ -125,7 +125,7 @@ export default {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #fff;
+  background-color: var(--mainBg);
   border-radius: 4px;
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
   transition: all 0.4s;
@@ -157,8 +157,9 @@ export default {
   margin: 0 0;
   line-height: 40px;
   white-space: nowrap;
-  background-color: #fff;
+  background-color: var(--mainBg);
   padding: 0 5px;
+  color:var(--textColor) !important;
 }
 
 .card-nav-content {
