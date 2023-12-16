@@ -170,7 +170,7 @@ function nextAllTipElement(elem) {
   font-size: 14px;
 }
 
-.icon {
+.global-tip .icon {
   margin-right: 10px;
   line-height: 17px;
 }

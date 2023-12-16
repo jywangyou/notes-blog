@@ -43,6 +43,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             ],
           },
           {
+            text: '页面',
+            items: [
+              { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+              { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+            ],
+          },
+          {
             text: '学习笔记',
             items: [
               { text: '《JavaScript教程》', link: '/note/javascript/' },
@@ -71,11 +78,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
+        text: '后端',
+        link: '/backend/',
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          {
+            text: 'Nodejs',
+            items: [
+              { text: 'Nodejs 笔记', link: '/note/node/' }
+            ],
+          },
+          {
+            text: 'C#',
+            items: [
+              { text: '《C#》笔记', link: '/note/cc/' },
+            ],
+          },
         ],
       },
       {
