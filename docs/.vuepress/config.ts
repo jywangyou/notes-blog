@@ -191,7 +191,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://cdn.jsdelivr.net/gh/jywangyou/picx-images-hosting@master/img/okhead.5l9l7bclm5o0.png',
+      avatar: 'https://cdn.jsdelivr.net/gh/jywangyou/Images@master/img/okhead.5l9l7bclm5o0.png',
       name: 'Kronos',
       slogan: '纵有疾风起，人生不言弃',
     },
