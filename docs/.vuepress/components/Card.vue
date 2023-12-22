@@ -22,7 +22,7 @@
                 v-if="item.cardImgSrc && item.cardImgSrc != ''"
                 :src="item.cardImgSrc"
                 alt="正在加载 ..."
-                class="card-nav-img"
+                class="card-nav-img no-room"
               /> -->
               <p class="card-nav-name" :style="'color:' + carTitleColor">
                 {{ item.cardName }}
