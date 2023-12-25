@@ -21,7 +21,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Kronos' blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      description: 'Kronos 个人博客,使用 VuePress 搭建,专注web前端学习与总结。分享技术，记录生活',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -289,7 +289,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no' }],//防止在移动端获取焦点页面变大
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度统计的站长验证
+    // ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度统计的站长验证
     ['meta', { name: 'baidu-site-verification', content: 'codeva-BxtPt7FduG' }],//百度统计的站长验证
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],//解决Chrome 统计访问不准确问题
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],//站点信息相关图标
