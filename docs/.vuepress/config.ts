@@ -290,7 +290,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no' }],//防止在移动端获取焦点页面变大
     // ['meta', { name: 'baidu-site-verification', content: 'codeva-6ATZk0KU7R' }],//百度统计的站长验证
-    ['meta', { name: 'baidu-site-verification', content: 'codeva-BxtPt7FduG' }],//百度统计的站长验证
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-Gy7aVxEXlh' }],//百度统计的站长验证
     ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],//解决Chrome 统计访问不准确问题
     ['link', { rel: 'stylesheet', href: 'https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css' }],//站点信息相关图标
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],//代码块折叠的箭头图标&时间提示的图标
