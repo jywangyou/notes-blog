@@ -111,7 +111,15 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
-  
+  li:hover{
+    box-shadow: #c0c0c0 0px 0px 5px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  li a:hover{
+    text-decoration: none !important;
+  }
   .activeselect {
     box-shadow: #c0c0c0 0px 0px 5px;
     background-color: #fff;

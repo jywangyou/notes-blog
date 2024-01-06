@@ -40,21 +40,23 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '前端文章',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              // { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+              { text: 'HTML', link: '/note/html/' },
+              { text: 'CSS', link: '/note/css/' },
             ],
           },
-          {
-            text: '页面',
-            items: [
-              { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-              { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-            ],
-          },
+          // {
+          //   text: '页面',
+          //   items: [
+          //     { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
+          //     { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          //   ],
+          // },
           {
             text: '学习笔记',
             items: [
               { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
+              // { text: '《JavaScript高级程序设计》', link: '/note/js/' },
               { text: '《ES6 教程》', link: '/note/es6/' },
               { text: '《Vue》', link: '/note/vue/' },
               {
@@ -67,12 +69,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               },
               { text: '《MUI》', link: '/note/mui/' },
               {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
+                text: '小程序笔记',
+                link: '/note/wx-miniprogram/',
               },
             ],
           },
@@ -83,16 +81,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/backend/',
         items: [
           {
-            text: 'Nodejs',
-            items: [
-              { text: 'Nodejs 笔记', link: '/note/node/' }
-            ],
+            text: 'Nodejs', link: '/note/node/'
+            // text: 'Nodejs',
+            // items: [
+            //   { text: 'Nodejs 笔记', link: '/note/node/' }
+            // ],
           },
           {
-            text: 'C#',
-            items: [
-              { text: '《C#》笔记', link: '/note/cc/' },
-            ],
+            text: 'C#',link: '/note/cc/'
+            // items: [
+            //   { text: '《C#》笔记', link: '/note/cc/' },
+            // ],
           },
         ],
       },
