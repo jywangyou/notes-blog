@@ -93,6 +93,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             //   { text: '《C#》笔记', link: '/note/cc/' },
             // ],
           },
+          {
+            text: '数据库',link: '/note/db/'
+            // items: [
+            //   { text: '《C#》笔记', link: '/note/cc/' },
+            // ],
+          },
         ],
       },
       {
