@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Kronos' blog
+heroText: 忘忧的小站
 tagline: 纵有疾风起，人生不言弃。
 # actionText: 立刻进入 →
 # actionLink: /web/
