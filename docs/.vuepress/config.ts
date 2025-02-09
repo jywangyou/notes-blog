@@ -20,7 +20,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "忘忧的小站",
+      title: "Kronos",
       description: 'Kronos 个人博客,使用 VuePress 搭建,专注web前端学习与总结。分享技术，记录生活',
     }
   },
@@ -301,6 +301,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }],//代码块折叠的箭头图标&时间提示的图标
     ['script', { src: 'https://cdn.staticfile.org/twikoo/1.6.7/twikoo.all.min.js' }],//评论系统twikoo
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['script', { src: './components/图片隐写/f.txt',async:true,crossorigin:"anonymous" }],
+    ['script', { src: './components/图片隐写/sjcl.js' }],
+    ['script', { src: './components/图片隐写/main.js.下载' }],
     [
       'meta',
       {

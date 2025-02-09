@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: 忘忧的小站
+heroText: Kronos' Blog
 tagline: 纵有疾风起，人生不言弃。
 # actionText: 立刻进入 →
 # actionLink: /web/
@@ -95,3 +95,5 @@ bannerBg: background:none # auto => 网格纹背景(有bodyBgImg时无背景)，
   <IndexBigImg />
   <!-- <Fantasy index="true" /> -->
 </ClientOnly>
+
+
